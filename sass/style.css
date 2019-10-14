@@ -125,6 +125,19 @@ html {
   margin-top: 1.5rem;
 }
 
+.header-for-blocks {
+  text-align: center;
+}
+
+.features-slider-block {
+  text-align: center;
+}
+
+.features-slider-img img {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 991px) {
   .main-content {
     text-align: center;
