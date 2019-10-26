@@ -132,7 +132,6 @@ html {
 
 .features {
   text-align: center;
-  line-height: 9rem;
 }
 
 .features h1 {
@@ -155,6 +154,12 @@ html {
 .features img {
   text-align: center;
   margin: 0 auto;
+  height: 4rem;
+}
+
+#features-gip {
+  color: #64b814;
+  text-decoration: none;
 }
 
 @media (max-width: 991px) {
