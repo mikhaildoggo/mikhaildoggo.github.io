@@ -98,7 +98,7 @@
                             </picture>
                         </div>
                         <h3>Платите по факту</h3>
-                       <p>Перед началом работ заключаем договор на юридическое лицо <br>
+                       <p class="features-text">Перед началом работ заключаем договор на юридическое лицо <br>
                         Вы можете быть уверены, что все обязательства быдут выполнены.</p>
                     </div>
                     <div class="features-block">
@@ -109,7 +109,7 @@
                             </picture>
                         </div>
                         <h3>Заключаем договор</h3>
-                        <p>Перед началом работ заключаем договор на юридическое лицо. <br>
+                        <p class="features-text">Перед началом работ заключаем договор на юридическое лицо. <br>
                             Вы можете быть уверены, что все обязательства быдут выполнены.</p>
                     </div>
             <div class="features-block">
@@ -120,7 +120,7 @@
                             </picture>
                         </div>
                         <h3>Точно в срок</h3>
-                       <p>Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем, Вы платите меньше.</p>
+                       <p class="features-text">Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем, Вы платите меньше.</p>
                     </div>
                     <div class="features-block">
                         <div class="features-img">
@@ -129,8 +129,8 @@
                                 <img src="photos/piggy-bank.png" alt="">
                             </picture>
                         </div>
-                        <h3>Экономьте на материалах</h3>
-                       <p>Мы являемся структурным подразделением компании поставщика строительных смесей gicema.ru и даём Вам самые выгодные цены.</p>
+                        <h3>Экономия</h3>
+                       <p class="features-text">Мы являемся структурным подразделением компании поставщика строительных смесей gicema.ru и даём Вам самые выгодные цены.</p>
                     </div>
                 </div>
     </div>
@@ -140,7 +140,31 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script>
-$('.features-slider').slick();
+$('.features-slider').slick({ 
+slidesToShow: 4, 
+speed: 450, 
+responsive: [ 
+{ 
+breakpoint: 1025, 
+settings:{ 
+slidesToShow: 2, 
+slidesToScroll: 2, 
+infinite: true, 
+prevArrow: '<button class="prev"></button>', 
+nextArrow: '<button class="next"></button>' 
+} 
+}, 
+{ 
+breakpoint: 575, 
+settings:{ 
+slidesToShow: 1, 
+slidesToScroll: 1, 
+prevArrow: '<button class="prev"></button>', 
+nextArrow: '<button class="next"></button>' 
+} 
+} 
+] 
+});
 </script>
       
 </body>
