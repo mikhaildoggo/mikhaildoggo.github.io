@@ -130,26 +130,33 @@ html
 .slick-active
     outline: none
 
-.prev, .next 
-    top: 12% 
-    position: absolute 
-    z-index: 99 
-    transform: translateY(50%) 
-    width: 3rem 
-    height: 3rem 
-    border: none 
-    transition: all 0.3s 
-    outline: none 
-    outline: none
-
 .prev
-    background: url(../photos/left-arrow.svg)
-    left: 0% 
-    background-size: 100%
-.next 
-    background: url(../photos/right-arrow.svg)
-    right: 0% 
-    background-size: 100%
+    position: absolute
+    top: 12%
+    left: 3%
+    transform: scaleY(-50%)
+    z-index: 10
+    width: 2rem
+    height: 2rem
+    border: none 
+    background: url(../photos/left-arrow.svg) center no-repeat
+    background-size: 80%
+.next
+    position: absolute
+    top: 12%
+    right: 3%
+    transform: scaleY(-50%)
+    z-index: 10
+    width: 2rem
+    height: 2rem
+    border: none 
+    background: url(../photos/right-arrow.svg) center no-repeat
+    background-size: 80%   
+.prev, .next
+    transition: all 0.3s
+    outline: none
+    &:hover 
+        cursor: pointer
 
     
 // Адаптация под 6 устройств main'а //
