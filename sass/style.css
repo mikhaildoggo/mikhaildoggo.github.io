@@ -194,13 +194,13 @@ html {
   background-size: 80%;
 }
 
-.prev, .next {
+.prev.click-arrow, .next.slick-arrow {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   outline: none;
 }
 
-.prev:hover, .next:hover {
+.prev.click-arrow:hover, .next.slick-arrow:hover {
   cursor: pointer;
 }
 
