@@ -394,6 +394,31 @@ button:focus, a:focus, input:focus, textarea:focus {
 
 .feedback {
   background: url(../photos/feedback/feedback-bg.png);
+  padding-bottom: 5rem;
+}
+
+.feedback-text {
+  position: relative;
+  border: 2px solid #64b814;
+  padding: 8px 10px 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  margin-top: -1.5rem;
+  margin-right: 10px;
+}
+
+.feedback-text:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -21.5px;
+  left: 40px;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border: 2px solid #64b814;
+  border-top-right-radius: 100px;
+  border-bottom: none;
 }
 
 .feedback-slider-arrow-prev {
@@ -418,6 +443,15 @@ button:focus, a:focus, input:focus, textarea:focus {
   height: 5rem;
   background-color: #64b814;
   border: none;
+}
+
+.feedback-slider {
+  background: #fff;
+  padding: 3rem;
+}
+
+.fotorama {
+  margin: 5px;
 }
 
 .materials {

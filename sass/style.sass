@@ -290,26 +290,50 @@ button, a, input, textarea
 		color: $light
 .feedback   
     background: url(../photos/feedback/feedback-bg.png)
-.feedback-slider-arrow-prev
-    left: -4rem 
-    position: absolute 
-    top: 50% 
-    transform: translateY(-50%) 
-    width: 4rem 
-    height: 5rem 
-    background-color: $icons-color 
-    border: none 
-.feedback-slider-arrow-next 
-    right: -4rem 
-    position: absolute 
-    top: 50% 
-    transform: translateY(-50%) 
-    width: 4rem 
-    height: 5rem 
-    background-color: $icons-color 
-    border: none 
-
-
+    padding-bottom: 5rem
+    &-text
+        position: relative
+        border: 2px solid $icons-color
+        padding: 8px 10px 10px
+        margin-top: 20px
+        font-size: 16px
+        margin-top: -1.5rem
+        margin-right: 10px
+        &:before
+            content: ''
+            position: absolute
+            display: block
+            top: -21.5px
+            left: 40px
+            width: 22px
+            height: 22px
+            background-color: $light
+            border: 2px solid $icons-color
+            border-top-right-radius: 100px 
+            border-bottom: none
+    &-slider-arrow-prev
+        left: -4rem 
+        position: absolute 
+        top: 50% 
+        transform: translateY(-50%) 
+        width: 4rem 
+        height: 5rem 
+        background-color: $icons-color 
+        border: none 
+    &-slider-arrow-next 
+        right: -4rem 
+        position: absolute 
+        top: 50% 
+        transform: translateY(-50%) 
+        width: 4rem 
+        height: 5rem 
+        background-color: $icons-color 
+        border: none 
+    &-slider
+        background: #fff 
+        padding: 3rem
+.fotorama
+    margin: 5px
 .materials
     background: url(../photos/materials/materials-bg.jpg)
     &-section-header
