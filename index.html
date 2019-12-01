@@ -297,12 +297,12 @@
 						<div class="row">
 							<div class="col-md-6">
 								<div class="fotorama" data-nav="thumbs">
-									<img src="photos/feedback/photos/1.jpg" alt="Штукатурка">
-									<img src="photos/feedback/photos/2.jpg" alt="Штукатурка">
-									<img src="photos/feedback/photos/3.jpg" alt="Штукатурка">
-									<img src="photos/feedback/photos/4.jpg" alt="Штукатурка">
-									<img src="photos/feedback/photos/5.jpg" alt="Штукатурка">
-									<img src="photos/feedback/photos/6.jpg" alt="Штукатурка">
+									<img src="photos/feedback/photos/1.jpg" alt="Штукатурка ">
+									<img src="photos/feedback/photos/2.jpg" alt="Штукатурка ">
+									<img src="photos/feedback/photos/3.jpg" alt="Штукатурка ">
+									<img src="photos/feedback/photos/4.jpg" alt="Штукатурка ">
+									<img src="photos/feedback/photos/5.jpg" alt="Штукатурка ">
+									<img src="photos/feedback/photos/6.jpg" alt="Штукатурка ">
 								</div>
 							</div>
 							<div class="col-md-6">
@@ -694,6 +694,19 @@ nextArrow: '<button class="next"></button>'
 }
 ]
 });
+$('.feedback-slider').slick({ 
+slidesToShow: 1, 
+slidesToScroll: 1, 
+infinite: true, 
+speed: 850, 
+prevArrow: '<button class="feedback-slider-arrow feedback-slider-arrow-prev"><img src="photos/feedback/left-arrow.svg"></button>', 
+nextArrow: '<button class="feedback-slider-arrow feedback-slider-arrow-next"><img src="photos/feedback/right-arrow.svg"></button>', 
+breakpoint: 575, 
+settings:{ 
+arrows: false, 
+dots: true 
+} 
+})
 </script>
 
   
