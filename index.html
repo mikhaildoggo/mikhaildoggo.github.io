@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="bootstrap4/bootstrap.css">
     <link rel="stylesheet" href="bootstrap4/bootstrap-grid.min.css">
     <link rel="stylesheet" href="sass/style.css">
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(56577730, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/56577730" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     
@@ -33,7 +48,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
                        <div class="wrap">
                            <div class="wrap-block">
-                            <button type="button" class="button header-btn">Получить инструкцию</button>
+                            <button type="button" class="button header-btn popup-btn">Получить инструкцию</button>
                            </div>
                        </div>
                     </div>  
@@ -334,9 +349,9 @@
   
         		<!--Модальные окна-->
 		<!--Получить консультацию-->
-		<div class="popup">
+
 			<!--Само (белое)окно-->
-			<div class="popup-dialog">
+			
 
                     <div class="feedback-form">
                             <h4 class="popup-header">Хотите так же? Оставьте Ваши контактные данные</h4>
@@ -354,7 +369,7 @@
                                 <button class="button" type="submit">оставьте заявку</button>
                             </form>
                         </div>
-                    </div>
+                   
                 </section>
 
 
@@ -890,6 +905,7 @@
             </div>
         </div>
     </div>
+</div>
 
     <footer class="footer">
         <div class="container">
@@ -910,9 +926,27 @@
         </div>
     </footer>
 
-
-
-
+  <div class="popup">
+    <div class="popup-dialog">
+        <div class="popup-content">
+            <button class="popup-close">&times</button>
+            <h4 class="popup-header">Заинтересовало?</h4>
+            <p>Оставьте свои контактные данные <br>для связи</p>
+            <div class="popup-form">
+                <form action="#">
+                    <label for="#">Ваше имя</label>
+                    <input class="main-form-input" type="text">
+                    <label for="#">Номер телефона</label>
+                    <input class="main-form-input" type="text">
+                    <label for="#">Сообщение</label>
+                    <textarea class="popup-form-textarea" rows="5"></textarea>
+                    <button class="button" type="submit">оставьте заявку</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -962,6 +996,14 @@ arrows: false,
 dots: true 
 } 
 })
+$('.popup-btn').on('click', function(event) {
+            event.preventDefault();
+            $('.popup').fadeIn();
+        })
+        $('.popup-close').on('click', function(event){
+            event.preventDefault();
+            $('.popup').fadeOut();
+        })
 </script>
 
   

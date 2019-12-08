@@ -805,6 +805,83 @@ button:focus, a:focus, input:focus, textarea:focus {
   margin-top: -0.7rem;
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.popup-content {
+  position: fixed;
+  top: 12%;
+  left: 50%;
+  width: 23.5rem;
+  background-color: #fff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  padding: 1.3rem 2.6rem 2rem;
+}
+
+.popup-content p {
+  font-size: 15px;
+}
+
+.popup-close {
+  position: absolute;
+  top: -1rem;
+  right: -1.3rem;
+  width: 1.3rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #000;
+}
+
+.popup-header {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1.3rem 0 0.7rem;
+}
+
+.popup-form {
+  margin-top: 2.3rem;
+}
+
+.popup-form label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+
+.popup-form-textarea {
+  display: block;
+  margin: 1.3rem 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding-left: 8px;
+  padding-top: 8px;
+  font-size: 14px;
+  resize: none;
+}
+
+.popup-form button {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  padding: 1.3rem 2.7rem;
+}
+
 .prev, .next {
   top: 22%;
   position: absolute;
@@ -844,15 +921,6 @@ button:focus, a:focus, input:focus, textarea:focus {
     position: static;
     margin-top: 2rem;
     text-align: center;
-  }
-  .prices-bruh {
-    width: 107%;
-  }
-  .prices-bug {
-    margin-left: -7%;
-  }
-  .link {
-    font-size: 15px;
   }
 }
 
