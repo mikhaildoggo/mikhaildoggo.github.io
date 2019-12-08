@@ -1028,6 +1028,17 @@ button:focus, a:focus, input:focus, textarea:focus {
   .link {
     text-align: center;
   }
+  .feedback-slider-arrow-prev, .feedback-slider-arrow-next {
+    margin-top: 26rem;
+    height: 2rem;
+    width: 2rem;
+  }
+  .feedback-slider-arrow-next {
+    right: 0;
+  }
+  .feedback-slider-arrow-prev {
+    left: 0;
+  }
 }
 
 @media (max-width: 570px) {
@@ -1056,6 +1067,17 @@ button:focus, a:focus, input:focus, textarea:focus {
     padding-top: 0rem;
     margin-top: 0px;
   }
+  .feedback-slider-arrow-prev, .feedback-slider-arrow-next {
+    margin-top: 26rem;
+    height: 2rem;
+    width: 2rem;
+  }
+  .feedback-slider-arrow-next {
+    right: 0;
+  }
+  .feedback-slider-arrow-prev {
+    left: 0;
+  }
 }
 
 @media (max-width: 330px) {
@@ -1067,6 +1089,9 @@ button:focus, a:focus, input:focus, textarea:focus {
   }
   .xergleba {
     text-align: center;
+  }
+  body {
+    max-width: 330px;
   }
 }
 
