@@ -958,6 +958,17 @@ button:focus, a:focus, input:focus, textarea:focus {
   .contacts-form {
     margin-top: 7rem;
   }
+  .feedback-slider-arrow-prev, .feedback-slider-arrow-next {
+    margin-top: 10rem;
+    height: 3rem;
+    width: 3rem;
+  }
+  .feedback-slider-arrow-next {
+    right: 5;
+  }
+  .feedback-slider-arrow-prev {
+    left: 5;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1012,6 +1023,17 @@ button:focus, a:focus, input:focus, textarea:focus {
   }
   .form-about-work {
     margin-top: 0;
+  }
+  .feedback-slider-arrow-prev, .feedback-slider-arrow-next {
+    margin-top: 10rem;
+    height: 3rem;
+    width: 3rem;
+  }
+  .feedback-slider-arrow-next {
+    right: 5;
+  }
+  .feedback-slider-arrow-prev {
+    left: 5;
   }
 }
 
@@ -1068,7 +1090,7 @@ button:focus, a:focus, input:focus, textarea:focus {
     margin-top: 0px;
   }
   .feedback-slider-arrow-prev, .feedback-slider-arrow-next {
-    margin-top: 26rem;
+    margin-top: 15rem;
     height: 2rem;
     width: 2rem;
   }
