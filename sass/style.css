@@ -1112,9 +1112,6 @@ button:focus, a:focus, input:focus, textarea:focus {
   .xergleba {
     text-align: center;
   }
-  body {
-    max-width: 330px;
-  }
 }
 
 @media (max-width: 2560px) {
@@ -1163,6 +1160,13 @@ button:focus, a:focus, input:focus, textarea:focus {
   }
   .baba-img {
     display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .ourwork {
+    background: url(../photos/bg-watch.jpg) no-repeat center;
+    background-size: 700%;
   }
 }
 /*# sourceMappingURL=style.css.map */
